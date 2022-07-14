@@ -1,0 +1,50 @@
+.listItem {
+  list-style: none;
+  margin: 15px 20%;
+  display: flex;
+  border-bottom: 1px solid #e4e4e4;
+  justify-content:space-between;
+  align-items: center;
+  }
+
+
+  .svg {
+    height: 1.2em;
+    filter: invert();
+  }
+
+  .buttonRemove {
+    background-color: #da7272;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    color: white;
+    padding: 3px 4px;
+    display: inline-block;
+    margin: 1px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .buttonRemove:hover {
+    background-color: #d62929;
+    color: rgb(255, 255, 255);
+  }
+  
+  .buttonComplete {
+    background-color: #7289da;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 4px 4px;
+    text-align: center;
+    display: inline-block;
+    margin: 1px 1rem;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .buttonComplete:hover {
+    background-color: #3dd629;
+    color: rgb(255, 255, 255);
+  }

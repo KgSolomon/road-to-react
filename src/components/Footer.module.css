@@ -1,0 +1,17 @@
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;   
+    background:#282b30;
+  }
+
+.links {
+    margin-top: 20px;
+    position: relative;
+    filter: invert();
+}
+
+.link {
+    margin-right: 25px;
+}
