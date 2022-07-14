@@ -1,4 +1,7 @@
 import React from "react";
+import InputWithLabel from "./InputWithLabel"
+import styles from "./AddTodoForm.module.css"
+import PropTypes from 'prop-types';
 
 const AddTodoList = ({onAddTodo}) => {
 
@@ -18,11 +21,17 @@ const AddTodoList = ({onAddTodo}) => {
 
     return (
         <form onSubmit={handleAddTodo}>
-            <label htmlFor='todoTitle'>Title</label>
-            <input type='text' id='todoTitle' name='title' value={todoTitle} onChange={handleTitleChange}></input>
-            <button type='submit'>Add</button>
+            <InputWithLabel id='todoTitle' todoTitle={todoTitle} handleTitleChange={handleTitleChange} isFocused></InputWithLabel>
+            
+            <button type='submit' className={styles.button}>Add</button>
         </form>
     );
 }
+
+AddTodoList.propTypes = {
+    onAddTodo: PropTypes.func,
+};
+
+
 
 export default AddTodoList;
